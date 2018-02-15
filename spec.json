@@ -1,0 +1,24 @@
+{
+  "enabled": 1,
+  "hidden": false,
+  "description": "Build master of nixpkgs-cloudwatt",
+  "nixexprinput": "cloudwatt",
+  "nixexprpath": "jobsets-declarative.nix",
+  "checkinterval": 60,
+  "schedulingshares": 100,
+  "enableemail": false,
+  "emailoverride": "",
+  "keepnr": 3,
+  "inputs": {
+    "cloudwatt": {
+      "value": "https://github.com/nlewo/nixpkgs-cloudwatt declarative keepDotGit",
+      "type": "git",
+      "emailresponsible": false
+    },
+    "nixpkgs": {
+      "value": "https://github.com/NixOS/nixpkgs a0e6a891ee21a6dcf3da35169794cc20b110ce05",
+      "type": "git",
+      "emailresponsible": false
+    }
+  }
+}
